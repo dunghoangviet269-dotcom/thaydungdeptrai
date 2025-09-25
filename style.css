@@ -49,3 +49,12 @@ button {
 button:hover {
   background: #005fa3;
 }
+
+.images img {
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 180px;
+  background: #fff;
+  padding: 5px;
+}
