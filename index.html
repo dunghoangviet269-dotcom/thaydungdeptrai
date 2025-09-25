@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Trang web Toán học của thầy Dũng đẹp trai</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4faff; }
-    header { background-color: #0077cc; color: white; padding: 15px 0; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; font-weight: bold; color: white; }
-    nav a:hover { color: yellow; }
-    main { text-align: center; padding: 40px; }
-    img { max-width: 300px; border-radius: 10px; margin-top: 20px; }
-  </style>
+  <title>Trang chủ - Toán học vui</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>📘 Toán học cùng thầy Dũng</h1>
+    <h1>📘 Toán học vui cùng thầy Dũng đẹp trai 😎</h1>
     <nav>
-      <a href="index.html">Trang chủ</a>
-      <a href="about.html">Giới thiệu</a>
+      <a href="index.html">Trang chủ</a> |
+      <a href="about.html">Giới thiệu</a> |
       <a href="contact.html">Liên hệ</a>
     </nav>
   </header>
 
   <main>
     <h2>Xin chào các em học sinh! 👋</h2>
-    <p>Chào mừng đến với <b>trang web Toán học</b> của thầy 😎.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Triangle_illustration.svg/200px-Triangle_illustration.svg.png" alt="Hình tam giác">
+    <p>Chào mừng các em đến với lớp Toán online. Hãy cùng học và chơi toán thật vui nhé!</p>
+
+    <h2>📝 Bài tập toán vui</h2>
+
+    <div class="exercise">
+      <p><b>Bài 1:</b> Giải phương trình: 2x + 5 = 15</p>
+      <button onclick="toggleAnswer('ans1')">Xem đáp án</button>
+      <p id="ans1" style="display:none;">Đáp án: x = 5</p>
+    </div>
+
+    <div class="exercise">
+      <p><b>Bài 2:</b> Cho tam giác vuông có cạnh góc vuông a = 3, b = 4. Hãy tính cạnh huyền c.</p>
+      <button onclick="toggleAnswer('ans2')">Xem đáp án</button>
+      <p id="ans2" style="display:none;">Đáp án: c = 5 (theo định lý Pitago)</p>
+    </div>
+
+    <div class="exercise">
+      <p><b>Bài 3:</b> Hàm số y = 2x + 1 có hệ số góc bằng bao nhiêu?</p>
+      <button onclick="toggleAnswer('ans3')">Xem đáp án</button>
+      <p id="ans3" style="display:none;">Đáp án: Hệ số góc = 2</p>
+    </div>
   </main>
+
+  <script>
+    function toggleAnswer(id) {
+      var ans = document.getElementById(id);
+      if (ans.style.display === "none") {
+        ans.style.display = "block";
+      } else {
+        ans.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>

@@ -1,38 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Liên hệ</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0fff0; }
-    header { background-color: #0077cc; color: white; padding: 15px 0; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; font-weight: bold; color: white; }
-    nav a:hover { color: yellow; }
-    main { text-align: center; padding: 40px; }
-    form input, form textarea { width: 300px; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
-    form button { padding: 10px 20px; background-color: #0077cc; color: white; border: none; border-radius: 5px; cursor: pointer; }
-    form button:hover { background-color: green; }
-  </style>
+  <title>Liên hệ - Toán học vui</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>📩 Liên hệ</h1>
+    <h1>📘 Liên hệ</h1>
     <nav>
-      <a href="index.html">Trang chủ</a>
-      <a href="about.html">Giới thiệu</a>
+      <a href="index.html">Trang chủ</a> |
+      <a href="about.html">Giới thiệu</a> |
       <a href="contact.html">Liên hệ</a>
     </nav>
   </header>
 
   <main>
-    <p>Nếu các em có câu hỏi, hãy gửi email cho thầy tại:</p>
-    <p><b>dunghoangviet269@gmail.com</b></p>
+    <h2>Liên hệ với thầy</h2>
+    <p>Nếu có thắc mắc hay muốn hỏi bài, các em có thể liên hệ với thầy qua email: <b>thaydung@toanvui.edu.vn</b></p>
 
-    <h2>📬 Gửi tin nhắn trực tiếp</h2>
     <form>
-      <input type="text" placeholder="Tên của bạn"><br>
-      <input type="email" placeholder="Email của bạn"><br>
-      <textarea rows="4" placeholder="Nội dung..."></textarea><br>
+      <label for="name">Tên của em:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="message">Câu hỏi:</label><br>
+      <textarea id="message" name="message"></textarea><br><br>
+
       <button type="submit">Gửi</button>
     </form>
   </main>
